@@ -1,0 +1,39 @@
+.task{
+    display: flex;
+    height: 70px;
+    margin-top: 15px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.task p{
+    width: 717px;
+    margin: 10px;
+    color: rgb(97, 97, 99);
+}
+
+p.textCompleted {
+    color: #808080;
+    text-decoration: line-through;
+}
+
+.listContainer{
+    width: 17px;
+    height: 17px;
+    margin: 10px 0 10px 10px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    border: 2px solid #5a4ede;
+}
+.listContainer svg{
+    width: 100%;
+    height: 100%;
+    color: rgb(32, 93, 178);;
+}
+
+.deleteItem{
+    border: transparent;
+    margin: 10px 10px 10px 0;
+    color: rgb(32, 93, 178);
+}

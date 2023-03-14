@@ -1,0 +1,33 @@
+.headerTask {
+    display: flex;
+    margin-top: 60px;
+    width: 800px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+.headerTask div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.headerTask span {
+    margin-left: 10px;
+    font-size: 11px;
+    padding: 8px;
+    background-color: rgb(63, 32, 176);
+    border-radius: 20px;
+}
+
+.headerlist{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.headerTask p{
+    color: rgb(32, 93, 178);
+}

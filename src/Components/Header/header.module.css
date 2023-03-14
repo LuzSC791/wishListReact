@@ -1,0 +1,48 @@
+h2{
+    /* color: rgb(32, 93, 178); */
+    color: rgb(63, 32, 176);
+    font-size: 60px;
+    /* font-weight: bolder; */
+}
+.header{
+    /* background-color: rgb(32, 93, 178); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 2rem; */
+    font-weight: bold;
+    height: 200px;
+}
+
+.taskForm {
+    display: flex;
+    position: absolute;
+    /* margin-right: 10px; */
+    right: 22%;
+    top: 27%;
+}
+.taskForm input{
+    /* background-color: rgb(44, 43, 43); */
+    width: 700px;
+    /* width: 100%; */
+    height: 55px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #0b0b0b;
+    border-color: transparent;
+}
+
+.taskForm button{
+    display: flex;
+    margin-left: 5px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(63, 32, 176);
+    color: #F2F2F2;
+    border-color: transparent;
+    font-size: .9rem;
+    font-weight: bold;
+}
