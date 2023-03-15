@@ -10,7 +10,6 @@ export const App = () => {
 
   const loadSaveTaks = () =>{
     const saved = localStorage.getItem(LOCAL_STORAGE_KEY)
-    console.log(saved)
     if(saved)
       setTasks(JSON.parse(saved))
 
@@ -26,12 +25,13 @@ export const App = () => {
   }
 
   const addTask = (taskTitle) =>{
-    setSaveTaks([...tasks,
-      {
+    const auxTasks = tasks.map(task => {return task.title})
+    if(auxTasks.includes(taskTitle)) return alert("El valor ya fue ingresado");
+    setSaveTaks([{
         id: crypto.randomUUID(),
         title: taskTitle,
         isCompleted: false 
-      }
+      }, ...tasks
     ])
   }
 

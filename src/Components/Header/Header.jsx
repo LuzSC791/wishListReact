@@ -7,9 +7,10 @@ export const Header = ({onAddTask}) => {
 
   function handleSubmit(event) {
     event.preventDefault();
-
+    if(title.trim().length <= 1) return;
+    onAddTask(title.trim());
     setTitle('');
-    onAddTask(title);
+    // onAddTask(title);
   }
   const cambiar = (event) =>{
     setTitle(event.target.value)
